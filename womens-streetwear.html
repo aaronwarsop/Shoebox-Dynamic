@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOMENS - Streetwear</title>
+
+    <link rel="stylesheet" href="mainstyles.css">
+    <link rel="stylesheet" href="productpage.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="productpage.js" defer></script>
+    <script src="main.js" defer></script>
+    
+    
+</head>
+<body>
+    <header>
+        <article class="title-and-logo">
+            <h1 class="title" title="Home"><a href="index.html">SHOEBOX</a></h1>
+            <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo" title="Home"></a>
+        </article>
+        
+
+        <nav class="navbar">
+            <ul class="dropdown">
+                <li class="dropdown-link"><a href="mens-streetwear.html">MEN</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mens-streetwear.html">Streetwear</a></li>
+                        <li><a href="mens-formals.html">Formals</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-link"><a href="womens-streetwear.html">WOMEN</a>
+                    <ul class="dropdown-menu dropdown-menu-womens">
+                        <li><a href="womens-streetwear.html">Streetwear</a></li>
+                        <li><a href="womens-formals.html">Formals</a></li>
+                    </ul>
+                </li>
+                <li><a href="kids.html">KIDS</a></li>
+                <li><a href="specials.html">SPECIALS</a></li>
+            </ul>
+        </nav>
+
+        <article class="functional-header">
+            <ul class="func-nav">
+                <li><a href="login.html"><i class="uil uil-user" title="Login/Singup"></i></a></li>
+                <li><a id="settings-button"><i class="uil uil-cog" title="Settings"></i></a>
+                    <dialog class="settings-popup">
+                        <div class="settings-flexbox">
+                            <span class="settings-top">
+                                <h3>Settings</h3>
+                                <i id="close-button" class="uil uil-multiply"></i>
+                            </span>
+                            <div class="font-size">
+                                <h5>Font Size:</h5>
+                                <ul>
+                                    <li><button class="small-font">Small</button></li>
+                                    <li><button class="medium-font">Medium</button></li>
+                                    <li><button class="large-font">Large</button></li>
+                                </ul>
+                            </div>
+                            <div class="font-colour">
+                                <h5>Font Colour:</h5>
+                                <input type="color" id="font-colour-input">
+                                <button id="font-colour-apply-btn">Apply</button>
+                            </div>
+                            <div class="background-colour">
+                                <h5>Backdrop Colour:</h5>
+                                <input type="color" id="background-colour-input">
+                                <button id="background-colour-apply-btn">Apply</button>
+                            </div>
+                            <div>
+                                <h5>Header backdrop:</h5>
+                                <input type="color" id="header-backdrop-colour-input">
+                                <button id="header-backdrop-apply-btn">Apply</button>
+                            </div>
+                            <button class="restore-button">Default</button>
+                        </div>
+                    </dialog>
+                </li>
+                <li><a href="#"><i class="uil uil-shopping-basket" title="Basket"></i></a></li>
+            </ul>
+        </article>
+        <div class="bx bx-menu" id="menu-responsive"></div>
+    </header>
+        
+    <section class="page-content">
+        <section class="catalogue-container">
+            <article id="block1" class="product-block">
+                <img class="product-image" src="assets/test3.jpg" alt=""></img>
+                <div class="product-details">
+                    <p>Running Shoes Pink</p>
+                    <p>£60.00</p>
+                    <i class="uil uil-shopping-basket" title="Add to Basket"></i>
+                </div>
+            </article>
+            <article id="block2" class="product-block">
+                <img class="product-image" src="assets/max-letek-Htp_vSEbNzU-unsplash.jpg" alt=""></img>
+                <div class="product-details">
+                    <p>Adidas White</p>
+                    <p>£65.00</p>
+                    <i class="uil uil-shopping-basket" title="Add to Basket"></i>
+                </div>
+            </article>
+            <article id="block3" class="product-block">
+                <img class="product-image" src="assets/mnz-Srj5F1y7p0k-unsplash.jpg" alt=""></img>
+                <div class="product-details">
+                    <p>Adidas Grey Off White</p>
+                    <p>£60.00</p>
+                    <i class="uil uil-shopping-basket" title="Add to Basket"></i>
+                </div>
+            </article>
+            <article id="block4" class="product-block">
+                <img class="product-image" src="assets/artiom-vallat-JwdWp_CZEjI-unsplash.jpg" alt=""></img>
+                <div class="product-details">
+                    <p>Vans Blue</p>
+                    <p>£40.00</p>
+                    <i class="uil uil-shopping-basket" title="Add to Basket"></i>
+                </div>
+            </article>
+        </section>
+    </section>
+
+    <footer>
+        <section class="footer-content">
+            <article class="footer-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="mens.html">Mens</a></li>
+                    <li><a href="womens.html">Womens</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="specials.html">Specials</a></li>
+                </ul>
+            </article>
+            <article class="footer-contact">
+                <h3>Contact</h3>
+                <ul>
+                    <li>aaron.warsop2021@my.ntu.ac.uk</li>
+                    <li>aaronwarsop@gmail.com</li>
+                </ul>
+            </article>
+            <article class="footer-socials">
+                <h3>Socials</h3>
+                <ul>
+                    <li>GitHub</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </article>
+            <div class="copyright">
+                Copyright © Aaron Warsop
+            </div>
+        </section>
+    </footer>
+    
+</body>
+</html>

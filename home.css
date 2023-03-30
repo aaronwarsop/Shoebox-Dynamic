@@ -1,0 +1,293 @@
+.page-content {
+    padding: 132px 8%;
+}
+
+.slideshow {
+    width: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 0;
+}
+  
+.slides {
+    width: 500%;
+    height: 750px;
+    display: flex;
+    
+}
+  
+.slides input {
+    display: none;
+}
+  
+.slide {
+    width: 20%;
+    transition: 2s;
+    
+}
+  
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.slides img:hover {
+    cursor: pointer;
+}
+  
+.navigation-manual {
+    position: absolute;
+    width: 85%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+  
+.manual-btn {
+    border: 1px solid white;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+  
+.manual-btn:hover {
+    background: white;
+}
+  
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+  
+#radio1:checked ~ .first {
+    margin-left: 0;
+    background: white;
+}
+  
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+  
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+  
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+.product-information {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.product-information p {
+    padding-top: .25rem;
+
+}
+
+.product-banner {
+    margin-top: 3rem;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-banner img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1em;
+    margin-top: 3em;
+    width: auto;
+}
+  
+.product-display-img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image-text {
+    text-align: center;
+    color: black;
+    margin-bottom: 1em;
+}
+
+.image-text h2{
+    font-size: 60px;
+}
+
+.image-text p{
+    font-size: 20px;
+}
+
+
+@media (max-width: 1620px) {
+    .slide img {
+        height: 650px;
+    }
+
+    .slides {
+        height: 650px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .slide img {
+        height: 500px;
+    }
+
+    .slides {
+        height: 500px;
+    }
+
+    .product-banner img {
+        height: 180px;
+    }
+
+    .product-display-img {
+        height: 450px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .slide img {
+        height: 420px;
+    }
+
+    .slides {
+        height: 420px;
+    }
+
+    .product-banner img {
+        height: 160px;
+    }
+
+    .product-display-img {
+        height: 350px;
+    }
+
+    .product-information {
+        font-size: 20px;
+    }
+
+    .image-text h2 {
+        font-size: 40px;
+    }
+
+    .image-text p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 912px) {
+    .page-content {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
+
+@media (max-width: 700px) {
+    .image-text h2 {
+        font-size: 30px;
+    }
+
+    .image-text p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 540px) {
+    .product-banner img {
+        height: 140px;
+    }
+
+    .product-display-img {
+        height: 250px;
+    }
+
+    .image-text h2 {
+        font-size: 24px;
+    }
+
+    .image-text p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .slideshow {
+        transform: translateY(-15px);
+    }
+}
+
+@media (max-width: 414px) {
+    .page-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .slide img {
+        height: 380px;
+    }
+
+    .slides {
+        height: 380px;
+    }
+
+    .slideshow {
+        border-radius: 0;
+    }
+
+    .product-banner img {
+        height: 140px;
+        border-radius: 0;
+    }
+
+    .product-display-img {
+        height: 200px;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .slideshow {
+        transform: translateY(-25px);
+    }
+}
+
+@media (max-width: 280px) {
+    .slide img {
+        height: 360px;
+    }
+
+    .slides {
+        height: 360px;
+    }
+
+    .product-display {
+        grid-template-columns: 1fr;
+    }
+
+    .product-banner img {
+        height: 120px;
+    }
+
+    .product-display-img {
+        height: 180px;
+    }
+}
+
